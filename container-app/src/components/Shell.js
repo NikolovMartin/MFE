@@ -36,11 +36,11 @@ const Shell = () => {
 
 export default Shell;
 
-const AppContainer = styled.header`
+export const AppContainer = styled.header`
   margin: 1rem;
 `;
 
-const Header = styled.header`
+export const Header = styled.header`
   display: flex;
   align-items: center;
   margin: 1.25rem 0;
@@ -57,7 +57,7 @@ const Header = styled.header`
   }
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   justify-content: start;
   align-items: start;
