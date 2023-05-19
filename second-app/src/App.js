@@ -10,14 +10,13 @@ const App = () => {
   };
 
   const [value, setValue] = useState(
-    localStorage.getItem("tankmix_input_text") ||
-      "This is maintained in React state"
+    localStorage.getItem("tankmix_input_text") || ""
   );
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "en"
   );
 
-  // Listen for LocalStorage language change
+  // Listen for localStorage language change
   useEffect(() => {
     const handleStorageChange = () => {
       setLanguage(localStorage.getItem("language"));
@@ -30,7 +29,7 @@ const App = () => {
     };
   }, []);
 
-  // Set input text in LocalStorage
+  // Set input text in localStorage
   useEffect(() => {
     localStorage.setItem("tankmix_input_text", `${value}`);
   }, [value]);
@@ -39,11 +38,13 @@ const App = () => {
     <Wrapper>
       <h1>{WELCOME_TEXT[language]} TankMix</h1>
 
-      <input value={value} onChange={(event) => setValue(event.target.value)} />
+      <input
+        value={value}
+        placeholder="This is maintained in localStorage"
+        onChange={(event) => setValue(event.target.value)}
+      />
 
-      <button onClick={() => setValue("This is maintained in React state")}>
-        Reset text
-      </button>
+      <button onClick={() => setValue("")}>Clear text</button>
     </Wrapper>
   );
 };

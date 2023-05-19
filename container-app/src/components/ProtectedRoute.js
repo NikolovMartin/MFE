@@ -8,7 +8,7 @@ const ProtectedRoute = ({ redirectPath = "/auth" }) => {
     localStorage.getItem("authenticationState") || "Login"
   );
 
-  // Listen for LocalStorage authentication change
+  // Listen for localStorage authentication change
   useEffect(() => {
     const handleStorageChange = () => {
       setAuth(localStorage.getItem("authenticationState"));
