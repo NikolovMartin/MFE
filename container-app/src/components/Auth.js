@@ -17,7 +17,9 @@ const Auth = () => {
         </Header>
 
         <Container>
-          <h3>Hello, please first Login</h3>
+          <p>
+            Hello, please <b>Login</b>.
+          </p>
         </Container>
       </AppContainer>
     </>
