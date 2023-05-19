@@ -48,7 +48,6 @@ module.exports = (_, argv) => ({
       remotes: {
         appGrassn: "appGrassn@http://localhost:3001/remoteEntry.js",
         appTankmix: "appTankmix@http://localhost:3002/remoteEntry.js",
-        thirdApp: "thirdApp@http://localhost:3003/remoteEntry.js",
       },
       exposes: {},
       shared: {
