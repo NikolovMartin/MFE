@@ -1,0 +1,2 @@
+# MFE
+Micro frontends app
