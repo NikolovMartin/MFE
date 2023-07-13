@@ -41,7 +41,7 @@ const App = () => {
 
       <input
         type="text"
-        placeholder="This is maintained in localStorage!! (added in master)"
+        placeholder="This is maintained in localStorage!! (added in test-branch-2)"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
