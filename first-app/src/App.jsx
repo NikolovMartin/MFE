@@ -70,6 +70,7 @@ const Wrapper = styled.div`
     border: 0.125rem solid rgb(229, 231, 235);
     border-radius: 0.375rem;
     font-size: inherit;
+    font-size: 1rem;
   }
 
   button {
