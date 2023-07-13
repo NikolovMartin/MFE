@@ -41,7 +41,7 @@ const App = () => {
 
       <input
         type="text"
-        placeholder="This is maintained in localStorage"
+        placeholder="This is maintained in localStorage!!"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
