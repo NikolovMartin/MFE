@@ -41,7 +41,7 @@ const App = () => {
 
       <input
         type="text"
-        placeholder="This is maintained in localStorage (added in master)"
+        placeholder="This is maintained in localStorage!! (added in test branch)"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
@@ -70,7 +70,6 @@ const Wrapper = styled.div`
     border: 0.125rem solid rgb(229, 231, 235);
     border-radius: 0.375rem;
     font-size: inherit;
-    font-size: 1rem;
   }
 
   button {
