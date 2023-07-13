@@ -94,7 +94,6 @@ const Wrapper = styled.div`
 
     &:hover {
       background-color: rgba(191, 219, 254, 0.3);
-      background-color: red;
     }
   }
 `;
