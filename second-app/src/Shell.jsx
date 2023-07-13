@@ -1,4 +1,4 @@
-import App from "./App.js";
+import App from "./App.jsx";
 
 const Shell = () => (
   <div className="m-4">
